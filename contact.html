@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/png" href="assets/img/icon.png">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/astronomy.css">
+  <!-- <link rel="stylesheet" href="assets/css/footer.css"> -->
+  <!-- Animate.css for SweetAlert animation -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- AOS Animate on Scroll -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- navbar: -->
+  <nav class="navbar" id="myNav"></nav>
+
+  <!-- contact -->
+  <title>Contact Us - Astronomy</title>
+  <!-- Contact Section -->
+  <section class="astro-contact">
+    <div class="astro-card">
+      <!-- Left Side Form -->
+      <div class="astro-form-side">
+        <h2><i class="fa-solid fa-message"></i> Get in Touch</h2>
+        <form class="astro-form">
+          <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-comment"></i>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Right Side Welcome -->
+      <div class="astro-welcome-side" data-aos="fade-left">
+        <h3>Welcome to the Stars!</h3>
+        <p>We'd love to hear from you. Drop us a message and let's connect across the universe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Cards -->
+  <div class="astro-info-cards">
+    <div class="astro-info-card">
+      <i class="fa-solid fa-location-dot"></i>
+      <h4>Our Space Station</h4>
+      <p>123 Galaxy Avenue,<br>Nebula City, Andromeda</p>
+    </div>
+    <div class="astro-info-card">
+      <i class="fa-solid fa-phone"></i>
+      <h4>Interstellar Hotline</h4>
+      <p>+123 456 7890<br>+987 654 3210</p>
+    </div>
+    <div class="astro-info-card">
+      <i class="fa-solid fa-envelope"></i>
+      <h4>Cosmic Mail</h4>
+      <p>contact@astronomyuniverse.com</p>
+    </div>
+  </div>
+
+<!--Footer-->
+  <div class="footer" id="myFooter"></div>
+
+</body>
+<script src="assets/js/navbar.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init(); // AOS initialization
+</script>
+
+<!-- SweetAlert2 Script -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Form Submission Handler -->
+<script>
+  const contactForm = document.querySelector('.astro-form');
+
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    Swal.fire({
+      title: 'Message Sent!',
+      text: 'Your message has been successfully sent across the galaxy 🌌',
+      icon: 'success',
+      background: '#0c0f2e',
+      color: '#00fff7',
+      confirmButtonText: 'Awesome!',
+      customClass: {
+        popup: 'astro-swal-popup',
+        confirmButton: 'astro-swal-btn'
+      },
+      buttonsStyling: false, 
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    });
+
+    contactForm.reset();
+  });
+</script>
+</html>

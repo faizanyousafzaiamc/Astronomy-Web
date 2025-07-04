@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/astronomy.css">
+    <link rel="stylesheet" href="assets/css/faq's.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+</head>
+<body>
+     <!-- navbar: -->
+  <nav class="navbar" id="myNav"></nav>
+
+  <!-- FAQ'S -->
+
+<div class="stars"></div>
+
+  <div class="faqs-container">
+    <h1 class="faqs-title"><u>Astronomy FAQ'S</u></h1>
+
+    <input type="text" id="faq-search" placeholder="Search a question...">
+
+    <div class="faq-item">
+      <div class="faq-question">What is Astronomy?</div>
+      <div class="faq-answer">Astronomy is the scientific study of celestial objects such as stars, planets, comets, and galaxies, and phenomena that originate outside Earth's atmosphere.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is a black hole?</div>
+      <div class="faq-answer">A black hole is a region in space where gravity is so strong that nothing, not even light, can escape from it.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How was the universe formed?</div>
+      <div class="faq-answer">The universe is believed to have formed about 13.8 billion years ago in a massive expansion called the Big Bang.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What are exoplanets?</div>
+      <div class="faq-answer">Exoplanets are planets that orbit stars outside our solar system.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is there life beyond Earth?</div>
+      <div class="faq-answer">While there is no confirmed evidence yet, scientists are actively researching and exploring the possibility of life beyond Earth.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is a supernova?</div>
+      <div class="faq-answer">A supernova is the explosive death of a massive star, resulting in a powerful burst of radiation and the creation of heavy elements that are spread into space.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What is dark matter?</div>
+      <div class="faq-answer">Dark matter is an invisible substance that doesn't emit light or energy, yet it makes up about 27% of the universe and affects the movement of galaxies through its gravity.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do telescopes help astronomers?</div>
+      <div class="faq-answer">Telescopes allow astronomers to observe distant celestial objects by collecting light, radio waves, or other signals, helping us learn about stars, galaxies, and the structure of the universe.</div>
+    </div>
+    <div class="faq-item">
+  <div class="faq-question">What is the Milky Way?</div>
+  <div class="faq-answer">The Milky Way is the galaxy that contains our solar system. It is a barred spiral galaxy composed of billions of stars, planets, and cosmic dust, and it appears as a milky band in the night sky.</div>
+</div>
+
+<div class="faq-item">
+  <div class="faq-question">What is the Hubble Space Telescope?</div>
+  <div class="faq-answer">The Hubble Space Telescope is a powerful observatory launched into Earth's orbit in 1990. It has provided some of the most detailed images of distant galaxies, nebulae, and other cosmic phenomena, helping scientists better understand the universe.</div>
+</div>
+  </div>
+   <!--Footer-->
+  <div class="footer" id="myFooter"></div>
+</body>
+ <script>
+  // Select all FAQ items
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  // Toggle open/close on click
+  faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+
+  // FAQ search filter
+  const searchInput = document.getElementById('faq-search');
+
+  searchInput.addEventListener('keyup', function () {
+    const searchTerm = this.value.toLowerCase();
+
+    faqItems.forEach(item => {
+      const questionText = item.querySelector('.faq-question').textContent.toLowerCase();
+      if (questionText.includes(searchTerm)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+</script>
+<script src="assets/js/navbar.js"></script>
+</html>

@@ -1,0 +1,161 @@
+
+/* Container */
+.observatories-content {
+  max-width: 1100px;
+  margin: 150px auto 100px;
+  color: #cceeff;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 3em;
+  color: #6cc8ff;
+  text-shadow: 0 0 20px #6cc8ff;
+  animation: glowText 2s ease-in-out infinite alternate;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 2em;
+  color: #5bb8ff;
+  margin: 40px 0 25px;
+  text-shadow: 0 0 10px #4ea1e0;
+}
+
+/* Intro paragraph */
+.intro {
+  font-size: 1.3em;
+  max-width: 850px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+  text-shadow: 0 0 5px rgba(0, 183, 255, 0.3);
+}
+
+/* Famous Observatories Cards */
+.obs-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.obs-card {
+  background: rgba(0, 30, 60, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgb(178, 150, 10);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  /* Make all cards equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%; /* Makes it flexible */
+  min-height: 280px; /* Force all cards to same minimum height */
+  box-sizing: border-box;
+}
+
+
+.obs-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 50px #55bbffaa;
+}
+
+.obs-card img {
+  width: 100%;
+  height: 180px; /* Fixed height for all images */
+  object-fit: cover; /* Crops image without stretching */
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px #3caeffcc;
+}
+.obs-card h4 {
+  color: #7ed6ff;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.obs-card p {
+  font-size: 1em;
+  color: #c0dfff;
+  line-height: 1.5;
+  text-align: justify;
+  margin-top: auto; /* Pushes content up if there's less text */
+}
+
+/* Observatory Types */
+.obs-types {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.type-card {
+  background: rgba(0, 40, 70, 0.6);
+  border-radius: 16px;
+  border: 1px solid rgba(224, 167, 23, 0.748);
+  width: 260px;
+  padding: 30px 20px;
+  box-shadow: 0 0 25px #3399ff33;
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.type-card:hover {
+  box-shadow: 0 0 40px #55bbffaa;
+}
+
+.type-card .icon {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #66c2ff;
+  text-shadow: 0 0 12px #55bfffaa;
+}
+
+.type-card h4 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #7ed6ff;
+}
+
+.type-card p {
+  font-size: 1.05em;
+  line-height: 1.5;
+  color: #c5dfff;
+}
+/* Geo Location Section */
+.location-section {
+  margin: 100px auto;
+  max-width: 1100px;
+  text-align: center;
+  color: #cceeff;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  border: 2px solid #3caeff;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 25px #00bbff55;
+}
+
+.geo-message {
+  padding: 15px;
+  background-color: rgba(255, 50, 50, 0.1);
+  color: #ffaaaa;
+  border: 1px solid #ff5555;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.d-none {
+  display: none;
+}

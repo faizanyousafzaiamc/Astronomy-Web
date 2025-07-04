@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Explorer | Astronomy Portal</title>
+  <link rel="icon" type="image/png" href="assets/img/icon.png">
+  <link rel="stylesheet" href="assets/css/astronomy.css">
+  <link rel="stylesheet" href="assets/css/bigbang.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Stellar Background -->
+  <div class="stellar-bg">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="shooting-stars"></div>
+  </div>
+  <!-- navbar: -->
+  <nav class="navbar" id="myNav"></nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">The Big Bang Theory</h1>
+      <p class="hero-subtitle">Discover how it all began-the birth of time, space, and matter</p>
+      <button class="explore-btn">Begin Exploration</button>
+    </div>
+    <div class="planet-orbits">
+      <div class="sun"></div>
+      <div class="orbit mercury-orbit">
+        <div class="planet mercury"></div>
+      </div>
+      <div class="orbit venus-orbit">
+        <div class="planet venus"></div>
+      </div>
+      <div class="orbit earth-orbit">
+        <div class="planet earth"></div>
+      </div>
+      <div class="orbit mars-orbit">
+        <div class="planet mars"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal Structure -->
+  <div class="modal-overlay" id="bigbang-modal">
+    <div class="modal-box">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <div class="modal-content">
+        <div class="modal-video">
+          <video src="assets/videos/big bang.mp4" autoplay loop muted></video>
+        </div>
+        <div class="modal-text">
+          <h2>The Big Bang Theory</h2>
+          <p>
+            The Big Bang Theory explains the origin of our universe. It began from an extremely hot and dense
+            singularity around 13.8 billion years ago. As it expanded, space itself grew, cooling and forming galaxies,
+            stars, and planets. This cosmic explosion was not in space—it was the expansion of space.
+          </p>
+          <p>
+            Over time, subatomic particles formed atoms, leading to the cosmic microwave background radiation we detect
+            today. The universe continues expanding, revealing the vast, dynamic story of creation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Timeline Section -->
+  <section class="timeline-section">
+    <h2 class="section-title">Timeline of the Universe</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon">🌌</div>
+        <div class="timeline-box">
+          <h3>13.8 Billion Years Ago</h3>
+          <p>The universe began with a rapid expansion known as the Big Bang.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">🌠</div>
+        <div class="timeline-box">
+          <h3>380,000 Years Later</h3>
+          <p>Light was finally able to travel freely — this is the Cosmic Microwave Background.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">✨</div>
+        <div class="timeline-box">
+          <h3>200 Million Years</h3>
+          <p>The first stars and galaxies began to form from clouds of hydrogen and helium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Evedence section-->
+  <section class="evidence-section">
+    <h2 class="section-title">Evidence of the Big Bang</h2>
+    <div class="card-grid">
+      <div class="evidence-card">
+        <div class="evidence-content">
+          <h3>Cosmic Microwave Background</h3>
+          <p>Faint radiation leftover from the early universe, detected as a glow across space.</p>
+        </div>
+      </div>
+      <div class="evidence-card">
+        <div class="evidence-content">
+          <h3>Redshift of Galaxies</h3>
+          <p>Galaxies appear to be moving away, indicating expansion of the universe.</p>
+        </div>
+      </div>
+      <div class="evidence-card">
+        <div class="evidence-content">
+          <h3>Elemental Abundance</h3>
+          <p>The specific ratios of hydrogen, helium, and lithium match Big Bang predictions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Scientists Section -->
+  <section class="scientists-section">
+    <h2 class="section-title">Key Scientists</h2>
+    <div class="scientist-grid">
+      <div class="scientist-card">
+        <h3>Georges Lemaître</h3>
+        <p>First proposed the idea of a "primeval atom" — the Big Bang.</p>
+      </div>
+      <div class="scientist-card">
+        <h3>Edwin Hubble</h3>
+        <p>Discovered that galaxies are moving apart — universe is expanding.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Embed -->
+  <section class="video-section">
+    <h2 class="section-title">✨ Watch: Birth of the Universe ✨</h2>
+    <div class="video-wrapper">
+      <div class="video-glow"></div>
+      <iframe src="https://www.youtube.com/embed/wNDGgL73ihY" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!--Gallery-->
+  <section class="earth-gallery-section">
+    <h2 class="gallery-title">Earth & Space Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/img/early earth.jpg" alt="Early Earth">
+        <div class="overlay">
+          <h3 class="image-name">Early Earth</h3>
+          <!-- Button removed -->
+        </div>
+        <div class="details-text">
+          Earth's fiery beginning, shaping life's cradle."
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/form.png" alt="Cosmic Formation">
+        <div class="overlay">
+          <h3 class="image-name">Cosmic Formation</h3>
+        </div>
+        <div class="details-text">
+          From stardust to galaxies — the birth of the cosmos.
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/expansion.avif" alt="Expanding Universe">
+        <div class="overlay">
+          <h3 class="image-name">Expanding Universe</h3>
+        </div>
+        <div class="details-text">
+          The cosmos stretching endlessly, carrying galaxies apart.
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/img/modern.jpeg" alt="Modern Earth">
+        <div class="overlay">
+          <h3 class="image-name">Modern Earth</h3>
+        </div>
+        <div class="details-text">
+          A diverse planet with thriving life and dynamic ecosystems.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--Footer-->
+  <div class="footer" id="myFooter">
+
+  </div>
+
+
+</body>
+<script src="assets/js/navbar.js"></script>
+<script>
+  const modal = document.getElementById("bigbang-modal");
+  const openBtn = document.querySelector(".explore-btn");
+  const closeBtn = document.getElementById("close-modal");
+
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden"; // Prevent scroll
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+
+  // Close modal if clicking outside modal-box
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+</script>
+
+
+</html>

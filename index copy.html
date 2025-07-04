@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy</title>
+    <link rel="icon" type="image/png" href="space_vibes/icon.png">
+    <link rel="stylesheet" href="galaxy-assets/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+
+    <!-- navbar: -->
+    <nav class="navbar" id="myNav"></nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slide" style="--i:0;"><img src="space_vibes/mercury.jpeg"></div>
+        <div class="slide" style="--i:1;"><img src="space_vibes/venus.png"></div>
+        <div class="slide" style="--i:2;"><img src="space_vibes/earth.jpeg"></div>
+        <div class="slide" style="--i:3;"><img src="space_vibes/mars.jpeg"></div>
+        <div class="slide" style="--i:4;"><img src="space_vibes/jupitar.jpeg"></div>
+        <div class="slide" style="--i:5;"><img src="space_vibes/Satürn.jpeg"></div>
+        <div class="slide" style="--i:6;"><img src="space_vibes/uranus.jpeg"></div>
+        <div class="slide" style="--i:7;"><img src="space_vibes/galaxy.jpg"></div>
+    </div>
+
+    <!--Heading-->
+    <div class="astronomy-section">
+        <h2 class="astro-heading">Astronomy</h2>
+        <p class="astro-text">
+            Dive into the endless mysteries of space.<br>
+            Witness the beauty of stars, galaxies, and the unknown.<br>
+            Astronomy reveals the poetry written in the stars.
+        </p>
+    </div>
+    <div class="container" id="cards-container"></div>
+
+    <!-- The Modal -->
+    <div id="spaceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2 id="modal-title">Title</h2>
+                <div class="planet-tag" id="planet-tag">Comet</div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-video-container">
+                    <video id="modal-video" autoplay muted loop></video>
+                </div>
+                <div class="modal-text">
+                    <p id="modal-description">Description will appear here</p>
+                    <div class="planet-facts">
+                        <div class="fact-item">
+                            <span class="fact-label">Distance from Sun</span>
+                            <span class="fact-value" id="distance">--</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Orbital Period</span>
+                            <span class="fact-value" id="orbital-period">--</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Diameter</span>
+                            <span class="fact-value" id="diameter">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Missions & Discoveries Timeline Section -->
+<section class="timeline-section">
+  <h2>🚀 Missions & Discoveries</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1957 - Sputnik 1</h3>
+        <p>First artificial satellite launched by the Soviet Union.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1969 - Apollo 11</h3>
+        <p>First humans landed on the Moon by NASA.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1990 - Hubble Telescope</h3>
+        <p>Launched into orbit to capture deep space images.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>2021 - James Webb</h3>
+        <p>Advanced space telescope launched for deep space exploration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="did-you-know">
+  <h2 class="section-heading">🌌 Did You Know?</h2>
+  <div class="fact-carousel" id="factCarousel">
+    <div class="fact-slide">☄️ One million Earths can fit inside the Sun.</div>
+    <div class="fact-slide">🪐 Saturn's rings are mostly water ice.</div>
+    <div class="fact-slide">🌌 A day on Venus is longer than its year.</div>
+    <div class="fact-slide">🌠 Neutron stars can spin 600 times per second.</div>
+    <div class="fact-slide">🚀 Voyager 1 is 14B+ miles from Earth.</div>
+  </div>
+</section>
+
+
+    <!--Footer-->
+    <div class="footer" id="myFooter">
+
+    </div>
+</body>
+
+<script src="galaxy-assets/navbar.js"></script>
+<script src="galaxy-assets/indexCard.js"></script>
+
+</html>

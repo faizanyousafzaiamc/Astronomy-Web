@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetary Atmospheres | AstrOnoMy</title>
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/atmosphere.css">
+    
+    </style>
+</head>
+<body>
+    <!-- navbar: -->
+    <nav class="navbar" id="myNav"></nav>
+
+   <!-- Atmosphere Section -->
+<section id="atmosphere-section" class="atmosphere-container">
+  <div class="stars"></div>
+  <div class="content-wrapper">
+    <h2 class="section-title" data-aos="fade-down">Earth's Atmosphere</h2>
+    <p class="intro" data-aos="fade-up">The atmosphere is a dynamic shield of gases surrounding our planet, protecting life and shaping weather, climate, and communication.</p>
+    
+    <div class="layers">
+      <div class="layer-card" data-aos="fade-right">
+        <h3>Troposphere</h3>
+        <p>Closest to Earth. Weather forms here. Temperature decreases with altitude.</p>
+      </div>
+      <div class="layer-card" data-aos="fade-left">
+        <h3>Stratosphere</h3>
+        <p>Houses the ozone layer. Protects us from harmful UV rays. Jets fly here.</p>
+      </div>
+      <div class="layer-card" data-aos="fade-right">
+        <h3>Mesosphere</h3>
+        <p>Coldest layer. Meteors burn up here due to atmospheric friction.</p>
+      </div>
+      <div class="layer-card" data-aos="fade-left">
+        <h3>Thermosphere</h3>
+        <p>Contains ionosphere. Northern lights occur here. Space stations orbit in this layer.</p>
+      </div>
+      <div class="layer-card" data-aos="fade-up">
+        <h3>Exosphere</h3>
+        <p>Outermost layer. Gradually merges into space. Very thin and light gases.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fun-facts">
+  <h2 class="section-title">Interesting Facts About Atmosphere</h2>
+  <div class="facts-container">
+    <div class="fact-card">
+      <h3><span class="counter" data-target="21">0</span>%</h3>
+      <p>Oxygen in Air</p>
+    </div>
+    <div class="fact-card">
+      <h3><span class="counter" data-target="5">0</span></h3>
+      <p>Atmospheric Layers</p>
+    </div>
+    <div class="fact-card">
+      <h3><span class="counter" data-target="2000">0</span>°C</h3>
+      <p>Thermosphere Temperature</p>
+    </div>
+    <div class="fact-card">
+      <h3><span class="counter" data-target="1000">0</span> km</h3>
+      <p>Exosphere Height</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <div class="footer" id="myFooter"></div>
+    <script>
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    counter.innerText = '0';
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = target / 100;
+
+      if (count < target) {
+        counter.innerText = `${Math.ceil(count + increment)}`;
+        setTimeout(updateCounter, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCounter();
+  });
+</script>
+
+
+    <script src="assets/js/navbar.js"></script>
+</body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+</html>
