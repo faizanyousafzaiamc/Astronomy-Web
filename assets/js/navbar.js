@@ -73,7 +73,7 @@ let footer = document.getElementById('myFooter').innerHTML = `
       <h3>Links <div class="under-line"><span></span></div></h3>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="bigbangtheory.html">Categories</a></li>
+        <li><a href="Bigbangtheory.html">Categories</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="FAQ'S.html">Faq's</a></li>
       </ul>
